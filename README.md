@@ -133,6 +133,7 @@ Make sure you add the new url and port to the `insecure-registries` section of t
 sudo nano /etc/docker/daemon.json
 
 Eg:
+```
 {
     "insecure-registries": [ "192.168.226.129:8082","192.168.226.129:8083" ]
 }
