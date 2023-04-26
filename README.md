@@ -89,6 +89,10 @@ For Docker Desktop (Windows or macOS), open your Docker Preferences, and select 
 
 Add this section:
 ```
+{
+    "insecure-registries": [ "192.168.226.129:8082"]
+}
+```
   "insecure-registries": [
     "localhost:8082"
   ],
@@ -126,7 +130,12 @@ docker pull localhost:8082/ubuntu
 
 Make sure you add the new url and port to the `insecure-registries` section of the docker config.
 
+sudo nano /etc/docker/daemon.json
+
 Eg:
+{
+    "insecure-registries": [ "192.168.226.129:8082","192.168.226.129:8083" ]
+}
 
 ```
   "insecure-registries": [
